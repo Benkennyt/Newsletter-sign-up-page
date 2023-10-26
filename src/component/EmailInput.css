@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Roboto-b;
+    src: url(/src/assets/fonts/Roboto-Bold.ttf);
+  }
+  @font-face {
+    font-family: Roboto-r;
+    src: url(/src/assets/fonts/Roboto-Regular.ttf);
+  }
+
+
+  .email-dv {
+    margin-top: 60px;
+  
+    
+  }
+
+  .email-err {
+    width: 92%;
+    padding-bottom: 35px;
+    font-family: Roboto-b;
+
+  }
+  .email-err h5 {
+    text-align: left;
+    font-size: 20px;
+    float: left;
+    margin: 0;
+  }
+
+  .email-err p {
+    text-align: left;
+    font-size: 20px;
+    float: right;
+    margin: 0;
+    color: red;
+  }
+
+  .text-space {
+    width: 90%;
+    height: 70px;
+    border-radius: 10px;
+    border:solid 2px rgb(215, 215, 215);
+    margin-bottom: 40px;
+
+  }
+
+  .text-space-1 {
+    border: none;
+    width: 90%;
+    height: 90%;
+    margin-left: 20px;
+    outline: none;
+  }
+
+  .text-space-1[type='text'] {
+    font-size: 20px;
+    font-family: Roboto-r;
+  }
+
+  .text-space-1::placeholder {
+    color: rgb(215, 215, 215);
+    opacity: 1;
+    font-family: Roboto-r;
+    font-size: 20px;
+
+  }
+
+ .btn {
+    font-family: Roboto-r;
+    width: 92%;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(32,39,71,255);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+  }
+
+  .btn:hover {
+    background: rgb(65, 71, 108); 
+    color: white;
+  }
+
+  .btn:active {
+    background: linear-gradient(90deg, rgba(224,83,181,1) 0%, rgba(226,88,88,1) 55%, rgba(209,164,100,1) 100%);
+    color: white;
+  }
+
+
+  /* media queries */
+
+  @media (width < 460px) {
+    .email-err h5 {
+      font-size: 16px;
+     }
+
+    .email-err p {
+      font-size: 16px;
+    }
+
+    .btn {
+      font-size: 16px;
+    }
+  }

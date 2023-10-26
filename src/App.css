@@ -1,0 +1,119 @@
+@font-face {
+  font-family: Roboto-b;
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto-r;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+.App {
+  color: rgba(32,39,71,255);
+  display: flex;
+  justify-content: center;
+}
+
+.signup-mobile {
+  visibility: hidden;
+  width: 0;
+}
+
+.stay-updated {
+  position: relative;
+  max-width: 40%;
+  text-align: left;
+  margin-left: 70px;
+  margin-top: 90px;
+}
+
+.stay-updated h1 {
+  font-family: Roboto-b;
+  font-size: 75px;
+  
+  
+}
+
+.list-j {
+  font-family: Roboto-r ;
+  font-size: 20px;
+  text-align: left;
+}
+
+.list-j p {
+  margin-bottom:60px ;
+}
+.list-j ul {
+padding: 0;
+}
+
+.list-j ul img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.signup-desktop {
+  position: relative;
+  width: 600px;
+}
+
+.signup-desktop img {
+  margin: 40px 0 40px 0 ;
+  width:100% ;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* media queries */
+
+@media (width < 460px) {
+ .App {
+  display: block;
+ }
+
+ .signup-mobile {
+  visibility: visible;
+  width: 100%;
+ }
+
+ .signup-mobile img {
+   width: 100%;
+ }
+
+ .signup-desktop {
+  visibility: hidden;
+  width: 0;
+ }
+
+ .stay-updated {
+  padding-left: 20px;
+  max-width: 100%;
+  text-align: none;
+  margin: 0;
+ }
+
+ .stay-updated h1 {
+   font-size: 45px;
+   width: 100%;
+ }
+
+ .list-j ul {
+   display: flex;
+   max-width: 33ch;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   justify-content: flex-start;
+   
+ }
+}
